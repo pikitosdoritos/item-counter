@@ -8,7 +8,7 @@ function handleCalculation() {
     const quantity = form.count.value
     const priceSpan = document.querySelector('.price').textContent
     const price = Number(priceSpan.match(/\d+/)[0])
-    const output = form.summ
+    const output = form.sum
 
     output.value = price * Number(quantity)
 }
