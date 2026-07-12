@@ -6,6 +6,11 @@ form.plus.onclick = increase
 
 function handleCalculation() {
     const quantity = form.count.value
+    const priceSpan = document.querySelector('.price').textContent
+    const price = Number(priceSpan.match(/\d+/)[0])
+    const output = form.summ
+
+    output.value = price * Number(quantity)
 }
 
 function decrease() {
